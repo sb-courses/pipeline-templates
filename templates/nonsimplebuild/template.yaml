@@ -1,6 +1,6 @@
 type: pipeline-template
 version: 1
-name: SimpleBuild
+name: A non simple build
 templateType: MULTIBRANCH
 parameters:
   - name: repoUrl
