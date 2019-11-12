@@ -1,0 +1,5 @@
+
+type: pipeline-template-catalog
+version: 1
+name: StuTest
+displayName: Shared Template Catalog by Stu Brown
