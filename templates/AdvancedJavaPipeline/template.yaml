@@ -5,10 +5,13 @@ templateType: MULTIBRANCH
 parameters:
   - name: repoName
     type: string
-    displayName: Repo
+    displayName: Repo name..
+  - name: repoOwner
+    type: string
+    displayName: Repo owner..
 multibranch:
   branchSource:
     github:
-      repoOwner: sb-courses
+      repoOwner: ${repoOwner}
       repository: ${repoName}
       credentialsId: m3-creds
