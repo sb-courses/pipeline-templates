@@ -1,4 +1,5 @@
 
 type: pipeline-template-catalog
-version: CentralServicesDefault
-displayName: Central Services Default Pipeline Template
+version: 1
+name: CentralServicesDefault
+displayName: Central Service Default Pipeline Templates
