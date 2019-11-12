@@ -2,7 +2,7 @@
   "branchOrTag" : "master",
   "scm" : {
     "$class" : "GitHubSCMSource",
-    "credentialsId" : "github",
+    "credentialsId" : "my-team-git-credentials",
     "repoOwner" : "sb-courses",
     "repository" : "pipeline-template-catalogs",
     "traits" : [ {
