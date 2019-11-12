@@ -3,7 +3,7 @@ version: 1
 name: Advanced Java Pipeline 
 templateType: MULTIBRANCH
 parameters:
-  - name: repoUrl
+  - name: repoName
     type: string
     displayName: Repo
 multibranch:
