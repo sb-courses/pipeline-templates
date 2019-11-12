@@ -10,4 +10,4 @@ multibranch:
   branchSource:
     git:
       remote: ${repoUrl}
-      credentialsId: github
+      credentialsId: my-team-git-credentials
