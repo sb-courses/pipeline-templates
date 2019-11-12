@@ -1,0 +1,12 @@
+type: pipeline-template
+version: 1
+name: Standard Gradle Pipeline 
+templateType: MULTIBRANCH
+parameters:
+  - name: repoUrl
+    type: string
+    displayName: Repo
+multibranch:
+  branchSource:
+    git:
+      remote: ${repoUrl}

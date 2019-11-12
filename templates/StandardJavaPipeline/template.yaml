@@ -1,6 +1,6 @@
 type: pipeline-template
 version: 1
-name: A non simple build
+name: Standard Java Pipeline 
 templateType: MULTIBRANCH
 parameters:
   - name: repoUrl
