@@ -8,6 +8,7 @@ parameters:
     displayName: Repo
 multibranch:
   branchSource:
-    git:
-      remote: ${repoUrl}
+    github:
+      repoOwner: sb-courses
+      repository: ${repoName}
       credentialsId: my-team-git-credentials
