@@ -1,0 +1,22 @@
+[ {
+  "branchOrTag" : "master",
+  "scm" : {
+    "$class" : "GitHubSCMSource",
+    "credentialsId" : "github",
+    "repoOwner" : "sb-courses",
+    "repository" : "pipeline-template-catalogs",
+    "traits" : [ {
+      "$class" : "org.jenkinsci.plugins.github_branch_source.BranchDiscoveryTrait",
+      "strategyId" : 1
+    }, {
+      "$class" : "OriginPullRequestDiscoveryTrait",
+      "strategyId" : 1
+    }, {
+      "$class" : "ForkPullRequestDiscoveryTrait",
+      "strategyId" : 1,
+      "trust" : {
+        "$class" : "TrustPermission"
+      }
+    } ]
+  }
+} ]
