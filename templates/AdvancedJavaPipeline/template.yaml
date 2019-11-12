@@ -11,4 +11,4 @@ multibranch:
     github:
       repoOwner: sb-courses
       repository: ${repoName}
-      credentialsId: my-team-git-credentials
+      credentialsId: m3-reds
