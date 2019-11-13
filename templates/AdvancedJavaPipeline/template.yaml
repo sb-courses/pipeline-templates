@@ -5,13 +5,16 @@ templateType: MULTIBRANCH
 parameters:
   - name: repoName
     type: string
-    displayName: Repo name..
+    displayName: Name of the repo to checkout from
   - name: repoOwner
     type: string
-    displayName: Repo owner..
+    displayName: Repo owner (this may be an org owner)
+  - name: repoCreds
+    type: string
+    displayName: Jenkins credentials id for build (these must already exist) 
 multibranch:
   branchSource:
     github:
       repoOwner: ${repoOwner}
       repository: ${repoName}
-      credentialsId: m3-creds
+      credentialsId: ${repoCreds}
