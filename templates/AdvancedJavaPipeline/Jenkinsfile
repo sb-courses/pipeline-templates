@@ -6,6 +6,9 @@ pipeline {
         sh """
           echo 'stu'
         """
+        echo "Repo Owner: ${repoOwner}"
+        echo "Repo Name : ${repoName}"
+        echo "Repo Creds: ${repoCreds}"
       }
     }
   }
