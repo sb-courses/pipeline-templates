@@ -20,7 +20,7 @@ pipeline {
           }
           steps {
             sh """
-            echo "deploying to"
+            echo "deploying to ${deployEnv}"
             """
           }
         }
