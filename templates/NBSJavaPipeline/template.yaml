@@ -13,10 +13,10 @@ parameters:
     type: string
     displayName: Jenkins credentials id for build (these must already exist)
   - name: deployApp
-    displayName: Deploy to an environment
+    displayName: Deploy ?
     type: boolean
   - name: deployEnv
-    displayName: Environments to Deploy to ....
+    displayName: Environments.
     type: String
 multibranch:
   branchSource:
