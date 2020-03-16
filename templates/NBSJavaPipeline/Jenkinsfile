@@ -1,0 +1,28 @@
+pipeline {
+  agent any
+  stages {
+    stage('Build') {
+      steps {
+        sh """
+        echo "Repo Owner: ${repoOwner}"
+        echo "Repo Name : ${repoName}"
+        echo "Repo Creds: ${repoCreds}"
+        echo "Deploy to .... "
+        """
+      }
+    }
+    stage('Deploy') {
+          when {
+            expression {
+                return true_or_false
+            }
+             beforeOptions true
+          }
+          steps {
+            sh """
+            echo "deploying to"
+            """
+          }
+        }
+  }
+}

@@ -1,0 +1,23 @@
+type: pipeline-template
+version: 1
+name: Advanced Java Pipeline 
+templateType: MULTIBRANCH
+parameters:
+  - name: repoName
+    type: string
+    displayName: Name of the repo to checkout from
+  - name: repoOwner
+    type: string
+    displayName: Repo owner (this may be an org owner)
+  - name: repoCreds
+    type: string
+    displayName: Jenkins credentials id for build (these must already exist)
+  - name: deployApp
+    displayName: Deploy to an environment
+    type: boolean
+multibranch:
+  branchSource:
+    github:
+      repoOwner: ${repoOwner}
+      repository: ${repoName}
+      credentialsId: ${repoCreds}
