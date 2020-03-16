@@ -14,7 +14,7 @@ pipeline {
     stage('Deploy') {
           when {
             expression {
-                return true_or_false
+                return deployApp
             }
              beforeOptions true
           }
