@@ -24,15 +24,13 @@ spec:
 """
         }
     }
-  stages {
-    stage('Build') {
-      steps {
-        sh """
-        echo "Repo Owner: ${repoOwner}"
-        echo "Repo Name : ${repoName}"
-        echo "Repo Creds: ${repoCreds}"
-        """
-      }
+    stages {
+        stage('Run maven') {
+            steps {
+                container('maven') {
+                    sh 'mvn build'
+                }
+            }
+        }
     }
-  }
 }
