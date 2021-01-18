@@ -1,6 +1,6 @@
 type: pipeline-template
 version: 1
-name: NBS Java Pipeline
+name: Acme Java Pipeline
 templateType: MULTIBRANCH
 parameters:
   - name: repoName
